@@ -263,7 +263,7 @@ svg {
 
 .profile-image-wrapper img {
   width: 60%;
-  padding: 0px 200px 0px 200px;
+  padding: 0px 200px 128px 200px; /* top right bottom left*/
 }
 
 .profile-content-wrapper {
