@@ -234,15 +234,10 @@ svg {
 
 .icon {
   fill: #979797;
-  transition: fill 1.5s;
+  transition: fill 0.4s;
 }
 .icon:hover {
   fill: white;
-}
-
-.icon-lighten {
-  transition: 0.5s;
-  color: aliceblue;
 }
 
 #icon {
