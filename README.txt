@@ -17,7 +17,7 @@ TODO:  - Build photo gallery
        
        
        
-# Mon Premier site web - Mon Portfolio
+# Mon Portfolio
 
 https://adriendemers.github.io/
 
