@@ -1,4 +1,4 @@
-# My Portfolio
+#My Portfolio
 
 https://adriendemers.github.io/
 
@@ -17,7 +17,7 @@ TODO:  - Build photo gallery
        
        
        
-# Mon Portfolio
+#Mon Portfolio
 
 https://adriendemers.github.io/
 
