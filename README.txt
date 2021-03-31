@@ -1,4 +1,4 @@
-My first Website - My Portfolio
+# My first Website - My Portfolio
 
 https://adriendemers.github.io/
 
@@ -17,7 +17,7 @@ TODO:  - Build photo gallery
        
        
        
-Mon Premier site web - Mon Portfolio
+# Mon Premier site web - Mon Portfolio
 
 https://adriendemers.github.io/
 
