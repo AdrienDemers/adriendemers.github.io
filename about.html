@@ -1,136 +1,281 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>À Propos d'Adrien</title>
-    <meta name="robot" content="index,follow" />
-    <link rel="icon" href="/images/logos/Galaxies (abstract)0612.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="left-side">
-          <div class="nav-link-wrapper">
-            <a href="index.html">Accueil</a>
-          </div>
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="about.html">À Propos</a>
-          </div>
-        </div>
+/* Master styles*/
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
 
-        <div class="right-side">
-          <div class="titre">
-            <div>ADRIEN DEMERS</div>
-          </div>
-        </div>
-      </div>
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-      <div class="content-wrapper">
-        <div class="two-column-wrapper">
-          <div class="profile-image-wrapper">
-            <img src="images/profile.jpg" />
-          </div>
+/* Nav styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
 
-          <div class="profile-content-wrapper">
-            <h1>Bonjour</h1>
-            <p>
-              Je suis un programmeur, un photographe et un monteur vidéo. Depuis
-              2012, la photographie et le montage vidéo me passionne.
-            </p>
-            <p>
-              J'ai commencé à apprendre la programmation en 2017 avec Java au
-              Cégep. Lors de mon dernier projet, j'ai élaborer l'interface d'une
-              application android.
-            </p>
-          </div>
-        </div>
-      </div>
+.left-side {
+  display: flex;
+}
 
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="contact">
-          <h1>Me Contacter</h1>
-          <p>adrien.demers@hotmail.com</p>
-        </div>
-        <!--Icons  ul -->
-        <ul class="icons">
-          <li>
-            <!-- Instagram Icon -->
-            <a
-              href="https://www.instagram.com/adridomdom/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="icon"
-                id="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="0.88em"
-                height="1em"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                /></svg
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/adrien-demers-a9535718b/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="0.88em"
-                height="1em"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"
-                />
-              </svg>
-            </a>
-          </li>
-          <!--github link-->
-          <li>
-            <a
-              href="https://github.com/AdrienDemers"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1.03em"
-                height="1em"
-                viewBox="0 0 1536 1504"
-              >
-                <path
-                  d="M768 0q209 0 385.5 103T1433 382.5T1536 768q0 251-146.5 451.5T1011 1497q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142q57-6 102.5-18t94-39t81-66.5t53-105T1258 728q0-119-79-206q37-91-8-204q-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T450 331.5T365 318q-45 113-8 204q-79 87-79 206q0 85 20.5 150T351 983t80.5 67t94 39t102.5 18q-39 36-49 103q-21 10-45 15t-57 5t-65.5-21.5T356 1146q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5t9 14t13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30t69.5 7t55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5T0 768q0-209 103-385.5T382.5 103T768 0zM291 1103q3-7-7-12q-10-3-13 2q-3 7 7 12q9 6 13-2zm31 34q7-5-2-16q-10-9-16-3q-7 5 2 16q10 10 16 3zm30 45q9-7 0-19q-8-13-17-6q-9 5 0 18t17 7zm42 42q8-8-4-19q-12-12-20-3q-9 8 4 19q12 12 20 3zm57 25q3-11-13-16q-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11q-16 0-16 11q0 13 17 11q16 0 16-11zm58-10q-2-11-18-9q-16 3-14 15t18 8t14-14z"
-                /></svg
-            ></a>
-          </li>
-        </ul>
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
 
-        <div class="end-logo">
-          <img src="/images/logos/logo1.png" />
-          <ul class="copyright"></ul>
-        </div>
+.nav-wrapper > .right-side > div {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 1px black;
+}
 
-        <!-- Menu -->
-        <ul class="copyright">
-          <li>&copy; Adrien Demers</li>
-        </ul>
-      </footer>
-    </div>
-    <!-- end of container -->
-  </body>
-</html>
+.nav-link-wrapper {
+  height: 22px;
+  margin-left: 16px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+/* Portfolio styles*/
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  border: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 60%;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-text-wrapper .logo-wrapper {
+  transition: 1s;
+  color: transparent;
+  fill: aqua;
+  color: aqua;
+}
+
+.image-text-wrapper:hover .logo-wrapper {
+  size: 5em;
+  fill: aqua;
+}
+
+.img-darken {
+  transition: 0.8s;
+  filter: brightness(50%);
+}
+
+.test {
+  display: flex;
+}
+
+.test > ul {
+  border: 0;
+  list-style-type: none;
+}
+.test > ul > li {
+  height: 200px;
+  transition: color 2s;
+}
+
+.test > ul > li:hover {
+  color: white;
+}
+
+.skills-wrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.hard-skills {
+  margin: 0px 0px 20px 100px;
+  font-weight: lighter;
+}
+.hard-skills > h1 {
+  font-weight: lighter;
+  font-size: 2.4em;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 10px 10px 10px;
+}
+
+.hard-skills > ul {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1.5em;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.soft-skills {
+  margin: 0px 100px 20px 0px; /* top right bottom left */
+  font-weight: lighter;
+}
+.soft-skills > h1 {
+  font-weight: lighter;
+  font-size: 2.4em;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 10px 10px 10px;
+}
+.soft-skills > ul {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 0;
+  margin: auto;
+  width: 50%;
+  list-style-type: none;
+  text-align: center;
+}
+/* End of Main page styles*/
+
+/* Icons */
+
+ul.icons {
+  cursor: default;
+  padding: 0;
+  border: 500px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+ul.icons a {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+
+#footer {
+  background-color: #2c2c2c;
+  padding: 1.5em;
+}
+.end-logo {
+  display: flex;
+  justify-content: center;
+  block-size: 8em;
+}
+
+ul {
+  font-size: 3em;
+}
+
+svg {
+  display: block;
+}
+
+.icon {
+  fill: #979797;
+  transition: fill 0.4s;
+}
+.icon:hover {
+  fill: white;
+}
+
+#icon {
+  transition-timing-function: ease-in-out;
+}
+
+.contact {
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+ul.copyright {
+  color: rgb(214, 236, 255);
+  cursor: default;
+  text-align: end;
+  font-size: 1em;
+  padding: 0em;
+  margin: 0em;
+}
+
+/* About page */
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
+  /* padding: 40px 150px 128px 100px; top right bottom left */
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
