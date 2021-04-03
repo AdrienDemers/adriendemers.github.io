@@ -7,13 +7,16 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: rgb(219, 219, 219);
 }
 
 /* Nav styles */
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 38px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #2c2c2c;
 }
 
 .left-side {
@@ -28,8 +31,9 @@ body {
 
 .nav-wrapper > .right-side > div {
   font-size: 1.2em;
+  color: white;
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px black;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
 }
 
 .nav-link-wrapper {
@@ -46,19 +50,19 @@ body {
 }
 
 .nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .nav-link-wrapper a:hover {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .active-nav-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .active-nav-link a {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /* Portfolio styles*/
@@ -250,9 +254,10 @@ svg {
   margin-bottom: 60px;
 }
 ul.copyright {
+  color: rgb(214, 236, 255);
   cursor: default;
   text-align: end;
-  font-size: 2em;
+  font-size: 1em;
   padding: 0em;
   margin: 0em;
 }
@@ -265,7 +270,11 @@ ul.copyright {
 
 .profile-image-wrapper img {
   width: 60%;
-  padding: 0px 200px 128px 200px; /* top right bottom left*/
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* padding: 40px 150px 128px 100px; top right bottom left */
 }
 
 .profile-content-wrapper {
