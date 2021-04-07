@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Master styles*/
 body {
   font-family: "Lato", sans-serif;
@@ -25,15 +30,31 @@ body {
 
 .nav-wrapper > .left-side > div {
   margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 1.2em;
   text-transform: uppercase;
 }
+.nav-wrapper > .left-side > img {
+  block-size: 4em;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+}
 
 .nav-wrapper > .right-side > div {
+  margin-top: auto;
   font-size: 1.2em;
   color: white;
   text-transform: uppercase;
   text-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
+
+.nav-wrapper > .right-side > div > p {
+  margin-top: 15px;
+  margin-bottom: auto;
 }
 
 .nav-link-wrapper {
@@ -222,11 +243,6 @@ ul.icons a {
   background-color: #2c2c2c;
   padding: 1.5em;
 }
-.end-logo {
-  display: flex;
-  justify-content: center;
-  block-size: 8em;
-}
 
 ul {
   font-size: 3em;
@@ -260,6 +276,12 @@ ul.copyright {
   font-size: 1em;
   padding: 0em;
   margin: 0em;
+}
+
+.end-logo {
+  display: flex;
+  justify-content: center;
+  block-size: 6em;
 }
 
 /* About page */
