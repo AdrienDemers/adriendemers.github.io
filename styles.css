@@ -15,6 +15,11 @@ body {
   background-color: rgb(219, 219, 219);
 }
 
+h1 {
+  margin-top: 14px;
+  margin-bottom: 21px;
+}
+
 /* Nav styles */
 .nav-wrapper {
   display: flex;
@@ -148,23 +153,6 @@ body {
   filter: brightness(50%);
 }
 
-.test {
-  display: flex;
-}
-
-.test > ul {
-  border: 0;
-  list-style-type: none;
-}
-.test > ul > li {
-  height: 200px;
-  transition: color 2s;
-}
-
-.test > ul > li:hover {
-  color: white;
-}
-
 .skills-wrapper {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -269,6 +257,7 @@ svg {
   text-align: center;
   margin-bottom: 60px;
 }
+
 ul.copyright {
   color: rgb(214, 236, 255);
   cursor: default;
