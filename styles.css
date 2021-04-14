@@ -265,12 +265,13 @@ svg {
 }
 
 ul.copyright {
-  color: rgb(214, 236, 255);
+  color: rgb(173, 183, 192);
   cursor: default;
   text-align: end;
   font-size: 1em;
   padding: 0em;
   margin: 0em;
+  list-style-type: none;
 }
 
 .end-logo {
