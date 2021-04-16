@@ -104,19 +104,20 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-bottom: 5px;
-  padding-left: 4px;
-  padding-right: 4px;
+  /* padding-left: 4px;
+  padding-right: 4px; */
 }
 
 .portfolio-item-wrapper {
   position: relative;
-  border: white;
+  padding: 1px;
+  border: rgb(219, 219, 219);
   border-width: 1px;
   border-style: solid;
 }
 
 .portfolio-img-background {
-  height: 350px;
+  height: 360px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -137,14 +138,20 @@ p {
 }
 
 .logo-wrapper img {
-  width: 60%;
+  width: 50%;
+  opacity: 0%;
   margin-bottom: 20px;
   flex-direction: column;
   align-items: center;
+  transition: opacity 0.3s;
+}
+
+.logo-wrapper img:hover {
+  opacity: 100%;
 }
 
 .image-text-wrapper .logo-wrapper {
-  transition: 1s;
+  transition: 0.5s;
   color: transparent;
   fill: aqua;
   color: aqua;
