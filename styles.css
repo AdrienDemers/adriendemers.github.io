@@ -7,12 +7,14 @@
 body {
   font-family: "Lato", sans-serif;
   margin: 0px;
+  min-width: 700px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
   background-color: rgb(219, 219, 219);
+  min-width: 800px;
 }
 
 h1 {
@@ -32,7 +34,6 @@ p {
   justify-content: space-between;
   padding: 30px;
   background-color: #2c2c2c;
-  min-width: 600px;
 }
 
 .left-side {
@@ -72,6 +73,7 @@ p {
   margin-left: 16px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
+  padding-bottom: 5px;
 }
 
 .nav-link-wrapper a {
@@ -89,6 +91,7 @@ p {
 }
 
 .active-nav-link {
+  padding-bottom: 5px;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -133,12 +136,15 @@ p {
   align-items: center;
   height: 100%;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+  padding: auto;
+  margin: auto;
 }
 
 .logo-wrapper img {
   width: 50%;
+  /* min-width: 300px; */
   opacity: 0%;
   margin-bottom: 20px;
   flex-direction: column;
