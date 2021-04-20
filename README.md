@@ -31,5 +31,5 @@ Voici mon premier projet de site web.
 
 Objectif: Montrer des projets de programmation ainsi que des photos et peut-être du montage vidéo.
 
-À Faire:  - Une section pour les photo
+À Faire:  - Une section pour les photos avec des catégories
           - Montrer des projets de prog
