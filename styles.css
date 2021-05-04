@@ -20,8 +20,13 @@ body {
 }
 
 h1 {
-  margin-top: 14px;
-  margin-bottom: 22px;
+  font-size: 2.2rem;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.2em;
 }
 
 p {
@@ -181,52 +186,43 @@ p {
   margin-top: 60px;
   margin-bottom: 60px;
   list-style: none;
+  text-align: center;
 }
 
 .hard-skills {
   margin: 0px 0px 20px 100px;
   font-weight: lighter;
 }
-.hard-skills > h1 {
+.hard-skills > h2 {
   font-weight: lighter;
-  font-size: 2.4em;
-  font-style: italic;
   text-align: center;
   padding: 5px 10px 10px 10px;
 }
 
-.hard-skills > ul {
+.list {
   font-weight: lighter;
   font-style: normal;
   font-size: 1.5em;
   list-style: none;
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
+  margin-left: 10vw;
 }
 
 .soft-skills {
   margin: 0px 100px 20px 0px; /* top right bottom left */
   font-weight: lighter;
 }
-.soft-skills > h1 {
+.soft-skills > h2 {
   font-weight: lighter;
-  font-size: 2.4em;
-  font-style: italic;
   text-align: center;
   padding: 5px 10px 10px 10px;
 }
-.soft-skills > ul {
-  font-weight: lighter;
-  font-style: normal;
-  font-size: 1.5em;
-  padding: 0;
-  margin: auto;
-  width: 50%;
-  list-style-type: none;
-  text-align: center;
-}
+
 /* End of Main page styles*/
+
+/* Footer styles */
 
 /* Icons */
 
@@ -283,7 +279,7 @@ svg {
 }
 
 ul.copyright {
-  color: rgb(173, 183, 192);
+  color: rgb(149, 158, 165);
   cursor: default;
   text-align: end;
   font-size: 1em;
