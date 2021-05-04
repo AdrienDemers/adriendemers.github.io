@@ -138,6 +138,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   text-align: center;
   /* padding-left: 50px;
   padding-right: 50px; */
@@ -147,7 +148,7 @@ p {
 
 .logo-wrapper img {
   width: 50%;
-  /* min-width: 300px; */
+  min-width: 250px;
   opacity: 0%;
   margin-bottom: 20px;
   flex-direction: column;
